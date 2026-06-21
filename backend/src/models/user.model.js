@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
@@ -11,60 +11,99 @@ const userLoginSchema = new mongoose.Schema(
     {
         userName: {
             type: String,
-            required: true,
+            required: [true, "Username is required"],
             unique: true,
+            trim: true,
             lowercase: true,
-            trim: true
+            minlength: [3, "Username must be at least 3 characters"],
+            maxlength: [20, "Username cannot exceed 20 characters"],
+            match: [
+                /^[a-zA-Z0-9_]+$/,
+                "Username can only contain letters, numbers, and underscores"
+            ]
         },
+
         fullName: {
             type: String,
-            required: true,
+            required: [true, "Full Name is required"],
             trim: true,
+            minlength: [3, "Full Name must be at least 3 characters"],
+            maxlength: [50, "Full Name cannot exceed 50 characters"],
             index: true
         },
+
         email: {
             type: String,
-            required: true,
+            required: [true, "Email is required"],
             unique: true,
-            lowercase: true
+            trim: true,
+            lowercase: true,
+            match: [
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                "Please enter a valid email address"
+            ]
         },
-        //email verification
+
         isEmailVerified: {
             type: Boolean,
             default: false
         },
+
         mobile: {
             type: String,
-            required: true,
+            required: [true, "Mobile Number is required"],
             unique: true,
-            match: [/^[0-9]{10}$/, "Please enter a valid mobile number"]
+            trim: true,
+            match: [
+                /^[0-9]{10}$/,
+                "Please enter a valid 10-digit mobile number"
+            ]
         },
+
+        isMobileVerified: {
+            type: Boolean,
+            default: false
+        },
+
         password: {
             type: String,
-            required: true
+            required: [true, "Password is required"],
+            minlength: [
+                8,
+                "Password must be at least 8 characters long"
+            ]
         },
+
         role: {
             type: String,
-            enum: ['admin', 'recruiter', 'user'],
-            default: 'user'
+            enum: {
+                values: [
+                    "admin",
+                    "recruiter",
+                    "user"
+                ],
+                message:
+                    "Role must be admin, recruiter, or user"
+            },
+            default: "user"
+        },
+
+        refreshToken: {
+            type: String,
+            default: ""
         }
     },
     {
         timestamps: true
-    }
-
-);
+    });
 
 
-
-// email verification token
-userLoginSchema.methods.generateEmailVerificationToken = function () {}
 
 // passwordBcrypt 
-userLoginSchema.pre("save", async function (next) {
+userLoginSchema.pre("save", async function () {
     if (!this.isModified("password")) return next();
     this.password = await bcrypt.hash(this.password, 10);
-    next();
+    
 })
 
 //isPasswordCorrect
@@ -82,7 +121,7 @@ userLoginSchema.methods.generateAccessToken = function () {
         },
         process.env.ACCESS_TOKEN_SECRET,
         {
-            expiresIn : process.env.ACCESS_TOKEN_EXPIRY
+            expiresIn: process.env.ACCESS_TOKEN_EXPIRY
         }
     )
 }
@@ -96,7 +135,7 @@ userLoginSchema.methods.generateRefreshToken = function () {
         },
         process.env.REFRESH_TOKEN_SECRET,
         {
-            expiresIn : process.env.REFRESH_TOKEN_EXPIRY
+            expiresIn: process.env.REFRESH_TOKEN_EXPIRY
         }
     )
 }
