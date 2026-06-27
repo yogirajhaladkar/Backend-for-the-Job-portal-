@@ -14,7 +14,7 @@ const router = Router();
 
 /**
  * @swagger
- * /recruiters/register:
+ * /recruiter/register:
  *   post:
  *     summary: Register Recruiter
  *     tags:
