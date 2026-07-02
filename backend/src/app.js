@@ -21,6 +21,7 @@ app.use(cookieParser());
 
 import userRouter from './routes/user.routes.js';
 import recruiterRouter from './routes/recruiter.routes.js';
+import jobRouter from './routes/job.routes.js';
 
 
 app.use(
@@ -31,6 +32,11 @@ app.use(
 app.use(
     "/api/v1/recruiters",
     recruiterRouter
+)
+
+app.use(
+    "/api/v1/jobs",
+    jobRouter
 )
 
 app.use(
