@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "6a4607e91df441583e108301"
+  },
+  "jobTitle": "Backend Developer",
+  "jobDescription": "Build scalable backend services for a modern job portal.",
+  "employmentType": "Full-Time",
+  "workMode": "Hybrid",
+  "jobCategory": "Software Development",
+  "experienceLevel": "Mid-Level",
+  "minimumExperience": 2,
+  "maximumExperience": 5,
+  "minimumQualification": "B.Tech",
+  "branch": "Computer Science",
+  "skills": [
+    "Node.js",
+    "Express",
+    "MongoDB"
+  ],
+  "salaryType": "Range",
+  "minSalary": 600000,
+  "maxSalary": 900000,
+  "currency": "INR",
+  "jobLocation": "Bengaluru",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "country": "India",
+  "numberOfOpenings": 3,
+  "applicationDeadline": {
+    "$date": "2026-12-31T00:00:00.000Z"
+  },
+  "isInternship": false,
+  "stipend": 0,
+  "benefits": [
+    "Health Insurance",
+    "Work From Home"
+  ],
+  "status": "Published",
+  "visibility": "Public",
+  "createdAt": {
+    "$date": "2026-07-02T06:40:41.801Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-02T06:40:41.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a460823869c2541c7840fe2"
+  },
+  "jobTitle": "Full Stack Developer",
+  "jobDescription": "Build and maintain scalable web applications.",
+  "employmentType": "Full-Time",
+  "workMode": "Hybrid",
+  "jobCategory": "Software Development",
+  "experienceLevel": "Mid-Level",
+  "minimumExperience": 2,
+  "maximumExperience": 5,
+  "minimumQualification": "B.Tech",
+  "branch": "Computer Science",
+  "skills": [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "React"
+  ],
+  "salaryType": "Range",
+  "minSalary": 600000,
+  "maxSalary": 900000,
+  "currency": "INR",
+  "jobLocation": "Bengaluru",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "country": "India",
+  "numberOfOpenings": 3,
+  "applicationDeadline": {
+    "$date": "2026-12-31T00:00:00.000Z"
+  },
+  "isInternship": false,
+  "stipend": 20000,
+  "internshipDuration": "3 Months",
+  "benefits": [
+    "Health Insurance",
+    "Work From Home",
+    "Flexible Hours"
+  ],
+  "status": "Published",
+  "visibility": "Public",
+  "createdAt": {
+    "$date": "2026-07-02T06:41:39.960Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-02T06:41:39.960Z"
+  },
+  "__v": 0
+}]

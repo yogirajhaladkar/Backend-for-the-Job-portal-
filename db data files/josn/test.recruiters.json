@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6a3fed2a396b327b3417e364"
+  },
+  "userId": {
+    "$oid": "6a3fed29396b327b3417e363"
+  },
+  "companyName": "test",
+  "companyDescription": "asdfgh sdfgh dfgh fgh hj",
+  "companyEmail": "hr.js@test.com",
+  "companyPhone": "2345678900",
+  "companyAddress": "difbsifo foeegf oofga ogfoa foagfho dafoda ohfody",
+  "companyCity": "pune",
+  "companyState": "maharashtra",
+  "companyCountry": "india",
+  "industry": "IT",
+  "companySize": "201-500",
+  "foundedYear": 2001,
+  "companyLogo": "http://res.cloudinary.com/jobportalscloud/image/upload/v1782574330/faijzgrzeyxtfvbptc7x.png",
+  "gstNumber": "18AABCT1234H1Z0",
+  "companyRegistrationNumber": "CIN-U72200KA2010ABC123456",
+  "hrDesignation": "hr manager",
+  "verificationDocuments": {
+    "gstCertificate": "http://res.cloudinary.com/jobportalscloud/image/upload/v1782574333/jqtmyhmkyfe2rhtcwnae.pdf",
+    "registrationCertificate": "http://res.cloudinary.com/jobportalscloud/image/upload/v1782574380/sceog9cvlzayrkpfz723.pdf"
+  },
+  "verificationStatus": "pending",
+  "verifiedBy": null,
+  "verifiedAt": null,
+  "createdAt": {
+    "$date": "2026-06-27T15:32:58.099Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-27T15:32:58.099Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,5 @@
+_id,userName,fullName,email,isEmailVerified,mobile,isMobileVerified,password,role,refreshToken,createdAt,updatedAt,__v
+6a38113713b348fcc36e53fd,john_doe,john doe,john@example.com,false,1234567890,false,$2b$10$F4vtDq52rvZ.uddxcKGLAeqOILt4RUdKayaq9az4s/Bj6aRqraDAe,user,,2026-06-21T16:28:39.626Z,2026-06-21T16:28:39.626Z,0
+6a3815b1d2ab1caf0ba38adf,yogita_2005,yogiraj haladkar,y@y.com,false,8087715552,false,$2b$10$Up8PC73a8mY6v9QygRbBf.sDhd7Qg6lSdsl3E9rdK4z2nanpaeTCu,user,,2026-06-21T16:47:45.487Z,2026-06-21T16:47:45.487Z,0
+6a3fed29396b327b3417e363,recrute0122,john smith,j.s@test.com,false,9876543210,false,$2b$10$QZLaQmo2Egy9jygvcnA2KuDU3fcq0llutKact3OpLaBnQ3qE.N166,recruiter,,2026-06-27T15:32:57.921Z,2026-06-27T15:32:57.921Z,0
+6a3ffd4f5babe4bcf14a873c,yogi2224,yogiraj haladkar,yogiraj@gmail.com,false,4567890123,false,$2b$10$gWrstd3l9bXvCq5yJU0Isurfg2yfHhmJvVLp0EIil3Ii6RqEK7LbO,user,,2026-06-27T16:41:51.623Z,2026-06-27T16:41:51.623Z,0

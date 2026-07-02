@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "6a38113713b348fcc36e53fd"
+  },
+  "userName": "john_doe",
+  "fullName": "john doe",
+  "email": "john@example.com",
+  "isEmailVerified": false,
+  "mobile": "1234567890",
+  "isMobileVerified": false,
+  "password": "$2b$10$F4vtDq52rvZ.uddxcKGLAeqOILt4RUdKayaq9az4s/Bj6aRqraDAe",
+  "role": "user",
+  "refreshToken": "",
+  "createdAt": {
+    "$date": "2026-06-21T16:28:39.626Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-21T16:28:39.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3815b1d2ab1caf0ba38adf"
+  },
+  "userName": "yogita_2005",
+  "fullName": "yogiraj haladkar",
+  "email": "y@y.com",
+  "isEmailVerified": false,
+  "mobile": "8087715552",
+  "isMobileVerified": false,
+  "password": "$2b$10$Up8PC73a8mY6v9QygRbBf.sDhd7Qg6lSdsl3E9rdK4z2nanpaeTCu",
+  "role": "user",
+  "refreshToken": "",
+  "createdAt": {
+    "$date": "2026-06-21T16:47:45.487Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-21T16:47:45.487Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3fed29396b327b3417e363"
+  },
+  "userName": "recrute0122",
+  "fullName": "john smith",
+  "email": "j.s@test.com",
+  "isEmailVerified": false,
+  "mobile": "9876543210",
+  "isMobileVerified": false,
+  "password": "$2b$10$QZLaQmo2Egy9jygvcnA2KuDU3fcq0llutKact3OpLaBnQ3qE.N166",
+  "role": "recruiter",
+  "refreshToken": "",
+  "createdAt": {
+    "$date": "2026-06-27T15:32:57.921Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-27T15:32:57.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3ffd4f5babe4bcf14a873c"
+  },
+  "userName": "yogi2224",
+  "fullName": "yogiraj haladkar",
+  "email": "yogiraj@gmail.com",
+  "isEmailVerified": false,
+  "mobile": "4567890123",
+  "isMobileVerified": false,
+  "password": "$2b$10$gWrstd3l9bXvCq5yJU0Isurfg2yfHhmJvVLp0EIil3Ii6RqEK7LbO",
+  "role": "user",
+  "refreshToken": "",
+  "createdAt": {
+    "$date": "2026-06-27T16:41:51.623Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-27T16:41:51.623Z"
+  },
+  "__v": 0
+}]
